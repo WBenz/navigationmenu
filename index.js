@@ -1771,7 +1771,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-1170.4,-602.3,2306.3,1186);
+p.nominalBounds = new cjs.Rectangle(-1170.4,-602.3,2306.1000000000004,1185.9);
 
 
 // stage content:
@@ -2000,7 +2000,7 @@ if (reversed == null) { reversed = false; }
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(-2236.1,-1183.1,4637.299999999999,2740.5);
+p.nominalBounds = new cjs.Rectangle(-2236.1,-1183.1,4637.1,2740.2);
 // library properties:
 lib.properties = {
 	id: '4500B5B81B871B4B901F7362A0DDC382',
@@ -2010,9 +2010,9 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 1.00,
 	manifest: [
-		{src:"images/Ellipse_0.png?1672492177862", id:"Ellipse_0"},
-		{src:"images/Path_0.png?1672492177862", id:"Path_0"},
-		{src:"images/Path_1_0.png?1672492177862", id:"Path_1_0"}
+		{src:"images/Ellipse_0.png", id:"Ellipse_0"},
+		{src:"images/Path_0.png", id:"Path_0"},
+		{src:"images/Path_1_0.png", id:"Path_1_0"}
 	],
 	preloads: []
 };
