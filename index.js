@@ -1414,6 +1414,54 @@ if (reversed == null) { reversed = false; }
 p.nominalBounds = new cjs.Rectangle(-313.8,-66.5,627.6,133);
 
 
+(lib.back_btn = function(mode,startPosition,loop,reversed) {
+if (loop == null) { loop = true; }
+if (reversed == null) { reversed = false; }
+	var props = new Object();
+	props.mode = mode;
+	props.startPosition = startPosition;
+	props.labels = {};
+	props.loop = loop;
+	props.reversed = reversed;
+	cjs.MovieClip.apply(this,[props]);
+
+	// txt
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#000000").s().p("AAKB2IAAgGQAHAAACgCQACgBAAgEQABgDgHgJIgug7IAAAyQAAAPADAEQACAFADACQAEACAMAAIAAAGIhMAAIAAgGQALAAAGgDQADgBACgEQACgGAAgNIAAiKQAAgagBgGQgBgGgCgCQgDgDgFAAQgDABgHADIgCgHIAtgSIAHAAIAACWIAmgiIAOgPIACgDQgBgDgDgDQgCgDgHAAIAAgFIBDAAIAAAFQgOAAgJAEQgJAEgLAKIgmAjIAmAxQARAVAFAFQAIAIAGACQAEACAKAAIAAAGg");
+	this.shape.setTransform(26.6,-0.3);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#000000").s().p("AgsA7QgTgWAAglQAAgiAVgXQAWgXAcABQAXgBAOAMQAPAMAAANQAAAHgEADQgEAEgIAAQgKAAgEgGQgDgDgBgLQgBgJgGgFQgGgGgKAAQgQAAgKANQgNAQAAAbQAAAaANAVQANAVAWAAQARAAAMgLQAKgIAIgUIAFACQgGAfgSAPQgSAQgWABQgZgBgTgVg");
+	this.shape_1.setTransform(10.325,3.9);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#000000").s().p("AAVBKQgFgGAAgNQgXASgFADQgKAEgJAAQgRAAgJgLQgLgLAAgRQAAgLAFgJQAHgLARgKQARgJAmgOIAAgGQAAgXgIgIQgGgJgNAAQgLAAgGAGQgHAGAAAHIABAKQAAAHgEAEQgEAEgGAAQgHAAgDgEQgEgEAAgIQAAgOAPgMQAOgMAaAAQAUAAAMAHQALAFAEALQADAHAAAWIAAAzQAAAWABAFQABAFACABQAAABABAAQAAAAABAAQAAABABAAQAAAAABAAIAFgBQAEgCAJgKIAAAJQgTAZgRAAQgIAAgEgGgAgQAAQgNAIgGAHQgFAIAAAKQAAAMAHAIQAIAIAIAAQANAAAUgRIAAg5QgYAKgIADg");
+	this.shape_2.setTransform(-4.25,3.825);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#000000").s().p("AhkBxIAAgHIAIAAQAOABAHgKQADgFAAgUIAAiQQAAgVgEgFQgHgIgNAAIgIAAIAAgFIBhAAQAaAAARADQAZAGANAQQANAPAAATQAAASgKANQgLANgUAGQAYAEALAMQAQAPAAAWQAAARgKAPQgLAPgSAIQgTAHgmAAgAgYADIgMABIAABcQAUAFARgBQAeAAAQgMQAQgOAAgVQAAgNgHgMQgHgLgQgIQgRgGgWAAIgSAAgAgkhhIAABWIAOACIASABQAXAAAMgFQAMgFAHgLQAGgLAAgNQAAgUgQgNQgQgOgegBQgQABgOADg");
+	this.shape_3.setTransform(-24.375,0.25);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(4));
+
+	// bg
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f().s("#000000").ss(1,1,1).p("AuhlOIdDAAIAAKdI9DAAg");
+
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("rgba(255,255,255,0.2)").s().p("AuhFPIAAqdIdDAAIAAKdg");
+
+	this.shape_6 = new cjs.Shape();
+	this.shape_6.graphics.f("rgba(255,255,255,0.498)").s().p("AuhFPIAAqdIdDAAIAAKdg");
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4}]}).to({state:[{t:this.shape_6},{t:this.shape_4}]},1).wait(3));
+
+	this._renderFirstFrame();
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(-94,-34.5,188,69);
+
+
 (lib.Sky = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -1786,7 +1834,7 @@ if (reversed == null) { reversed = false; }
 	props.reversed = reversed;
 	cjs.MovieClip.apply(this,[props]);
 
-	this.actionFrames = [24,44,64,84,104];
+	this.actionFrames = [24,44,64,84,104,150,172,194,216];
 	// timeline functions:
 	this.frame_24 = function() {
 		/* Arrêter la lecture à partir de cette image
@@ -1869,6 +1917,23 @@ if (reversed == null) { reversed = false; }
 		{
 			this.gotoAndPlay(46);
 		}
+		
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_8.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_8()
+		{
+			this.gotoAndPlay(106);
+		}
 	}
 	this.frame_64 = function() {
 		/* Arrêter la lecture à partir de cette image
@@ -1877,6 +1942,22 @@ if (reversed == null) { reversed = false; }
 		*/
 		
 		this.stop();
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_11.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_11()
+		{
+			this.gotoAndPlay(152);
+		}
 	}
 	this.frame_84 = function() {
 		/* Arrêter la lecture à partir de cette image
@@ -1885,6 +1966,22 @@ if (reversed == null) { reversed = false; }
 		*/
 		
 		this.stop();
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_13.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_13()
+		{
+			this.gotoAndPlay(196);
+		}
 	}
 	this.frame_104 = function() {
 		/* Arrêter la lecture à partir de cette image
@@ -1893,109 +1990,304 @@ if (reversed == null) { reversed = false; }
 		*/
 		
 		this.stop();
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_10.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_10()
+		{
+			this.gotoAndPlay(163);
+		}
+		
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_14.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_14()
+		{
+			this.gotoAndPlay(174);
+		}
+	}
+	this.frame_150 = function() {
+		/* Arrêter la lecture à partir de cette image
+		Le scénario arrête/met en pause la lecture à partir de cette image lorsque vous insérez ce code.
+		Vous pouvez également utiliser ce code pour arrêter/mettre en pause le scénario des clips.
+		*/
+		
+		this.stop();
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_1.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_9.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_9()
+		{
+			this.gotoAndPlay(26);
+		}
+	}
+	this.frame_172 = function() {
+		/* Arrêter la lecture à partir de cette image
+		Le scénario arrête/met en pause la lecture à partir de cette image lorsque vous insérez ce code.
+		Vous pouvez également utiliser ce code pour arrêter/mettre en pause le scénario des clips.
+		*/
+		
+		this.stop();
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_15.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_15()
+		{
+			this.gotoAndPlay(106);
+		}
+	}
+	this.frame_194 = function() {
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_12.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_12()
+		{
+			this.gotoAndPlay(185);
+		}
+		
+		
+		/* Arrêter la lecture à partir de cette image
+		Le scénario arrête/met en pause la lecture à partir de cette image lorsque vous insérez ce code.
+		Vous pouvez également utiliser ce code pour arrêter/mettre en pause le scénario des clips.
+		*/
+		
+		this.stop();
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_16.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_16()
+		{
+			this.gotoAndPlay(106);
+		}
+		
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_18.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_18()
+		{
+			this.gotoAndPlay(106);
+		}
+	}
+	this.frame_216 = function() {
+		/* Arrêter la lecture à partir de cette image
+		Le scénario arrête/met en pause la lecture à partir de cette image lorsque vous insérez ce code.
+		Vous pouvez également utiliser ce code pour arrêter/mettre en pause le scénario des clips.
+		*/
+		
+		this.stop();
+		
+		/* Cliquer pour atteindre l’image et démarrer la lecture
+		Cliquez sur l’occurrence de symbole spécifiée pour déplacer la tête de lecture vers l’image sélectionnée dans le scénario et poursuivre la lecture à partir de cette image.
+		Ce code peut être utilisé sur le scénario principal ou sur les scénarios des clips.
+		
+		Instructions :
+		1. Dans le code ci-dessous, remplacez le chiffre 5 par le numéro de l’image vers laquelle vous souhaitez que la tête de lecture se déplace lorsque vous cliquez sur l’occurrence de symbole.
+		2. Les numéros d’image dans EaselJS commencent à 0 au lieu de 1
+		*/
+		
+		this.button_8.addEventListener("click", fl_ClickToGoToAndPlayFromFrame_17.bind(this));
+		
+		function fl_ClickToGoToAndPlayFromFrame_17()
+		{
+			this.gotoAndPlay(106);
+		}
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(24).call(this.frame_24).wait(20).call(this.frame_44).wait(20).call(this.frame_64).wait(20).call(this.frame_84).wait(20).call(this.frame_104).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(24).call(this.frame_24).wait(20).call(this.frame_44).wait(20).call(this.frame_64).wait(20).call(this.frame_84).wait(20).call(this.frame_104).wait(46).call(this.frame_150).wait(22).call(this.frame_172).wait(22).call(this.frame_194).wait(22).call(this.frame_216).wait(1));
 
-	// btn03
-	this.instance = new lib.btn03();
-	this.instance.setTransform(139.3,375.55,0.3276,0.3275,0,0,0,0,0.1);
+	// backbtn
+	this.instance = new lib.back_btn();
+	this.instance.setTransform(480,500.15,0.6825,0.6825);
 	this.instance.alpha = 0;
 	this.instance._off = true;
-	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.btn03(), 3);
+	new cjs.ButtonHelper(this.instance, 0, 1, 2, false, new lib.back_btn(), 3);
+
+	this.button_8 = new lib.back_btn();
+	this.button_8.name = "button_8";
+	this.button_8.setTransform(480,500.15,0.6825,0.6825);
+	this.button_8._off = true;
+	new cjs.ButtonHelper(this.button_8, 0, 1, 2, false, new lib.back_btn(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(34).to({_off:false},0).to({_off:true,alpha:1},10).wait(173));
+	this.timeline.addTween(cjs.Tween.get(this.button_8).wait(34).to({_off:false},10).to({_off:true},1).wait(9).to({_off:false},0).to({_off:true},11).wait(19).to({_off:false},0).to({_off:true},1).wait(19).to({_off:false},0).wait(1).to({alpha:0},10).to({_off:true},1).wait(56).to({_off:false,alpha:1},0).to({_off:true},1).wait(21).to({_off:false},0).to({_off:true},1).wait(21).to({_off:false},0).wait(1));
+
+	// graphicprojects
+	this.instance_1 = new lib.graphic_btn();
+	this.instance_1.setTransform(225.65,320);
+	this.instance_1.alpha = 0;
+	this.instance_1._off = true;
+	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.graphic_btn(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(94).to({_off:false},0).to({alpha:1},10).to({_off:true},1).wait(68).to({_off:false},0).to({alpha:0},10).to({_off:true},1).wait(33));
+
+	// motionprojects
+	this.instance_2 = new lib.motion_btn();
+	this.instance_2.setTransform(744.35,320);
+	this.instance_2.alpha = 0;
+	this.instance_2._off = true;
+	new cjs.ButtonHelper(this.instance_2, 0, 1, 2, false, new lib.motion_btn(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(74).to({_off:false},0).to({alpha:1},10).to({_off:true},1).wait(110).to({_off:false},0).to({alpha:0},10).to({_off:true},1).wait(11));
+
+	// webprojects
+	this.instance_3 = new lib.web_btn();
+	this.instance_3.setTransform(219.6,320);
+	this.instance_3._off = true;
+	new cjs.ButtonHelper(this.instance_3, 0, 1, 2, false, new lib.web_btn(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(151).to({_off:false},0).to({alpha:0},10).to({_off:true},1).wait(55));
+
+	// btn03
+	this.instance_4 = new lib.btn03();
+	this.instance_4.setTransform(139.3,375.55,0.3276,0.3275,0,0,0,0,0.1);
+	this.instance_4.alpha = 0;
+	this.instance_4._off = true;
+	new cjs.ButtonHelper(this.instance_4, 0, 1, 2, false, new lib.btn03(), 3);
 
 	this.button_7 = new lib.btn03();
 	this.button_7.name = "button_7";
 	this.button_7.setTransform(139.3,375.55,0.3276,0.3275,0,0,0,0,0.1);
+	this.button_7._off = true;
 	new cjs.ButtonHelper(this.button_7, 0, 1, 2, false, new lib.btn03(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance}]},34).to({state:[{t:this.button_7}]},10).to({state:[]},1).wait(60));
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(34).to({_off:false},0).to({_off:true,alpha:1},10).wait(61));
+	this.instance_5 = new lib.web_btn();
+	this.instance_5.setTransform(219.6,320);
+	this.instance_5.alpha = 0;
+	this.instance_5._off = true;
+	new cjs.ButtonHelper(this.instance_5, 0, 1, 2, false, new lib.web_btn(), 3);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(34).to({_off:false},0).to({_off:true,alpha:1},10).wait(173));
+	this.timeline.addTween(cjs.Tween.get(this.button_7).wait(34).to({_off:false},10).to({_off:true},1).wait(60).to({_off:false},0).to({alpha:0},10).to({_off:true},1).wait(46).to({_off:false},0).to({alpha:1},10).to({_off:true},1).wait(11).to({_off:false,alpha:0},0).to({alpha:1},10).to({_off:true},1).wait(11).to({_off:false,alpha:0},0).to({alpha:1},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(54).to({_off:false},0).to({alpha:1},10).to({_off:true},1).wait(152));
 
 	// btn02
-	this.instance_1 = new lib.btn02();
-	this.instance_1.setTransform(139.3,324.45,0.3275,0.3275);
-	this.instance_1.alpha = 0;
-	this.instance_1._off = true;
-	new cjs.ButtonHelper(this.instance_1, 0, 1, 2, false, new lib.btn02(), 3);
+	this.instance_6 = new lib.btn02();
+	this.instance_6.setTransform(139.3,324.45,0.3275,0.3275);
+	this.instance_6.alpha = 0;
+	this.instance_6._off = true;
+	new cjs.ButtonHelper(this.instance_6, 0, 1, 2, false, new lib.btn02(), 3);
 
 	this.button_6 = new lib.btn02();
 	this.button_6.name = "button_6";
 	this.button_6.setTransform(139.3,324.45,0.3275,0.3275);
+	this.button_6._off = true;
 	new cjs.ButtonHelper(this.button_6, 0, 1, 2, false, new lib.btn02(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_1}]},34).to({state:[{t:this.button_6}]},10).to({state:[]},1).wait(60));
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(34).to({_off:false},0).to({_off:true,alpha:1},10).wait(61));
+	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(34).to({_off:false},0).to({_off:true,alpha:1},10).wait(173));
+	this.timeline.addTween(cjs.Tween.get(this.button_6).wait(34).to({_off:false},10).to({_off:true},1).wait(60).to({_off:false},0).to({alpha:0},10).to({_off:true},1).wait(46).to({_off:false},0).to({alpha:1},10).to({_off:true},1).wait(11).to({_off:false,alpha:0},0).to({alpha:1},10).to({_off:true},1).wait(11).to({_off:false,alpha:0},0).to({alpha:1},10).wait(1));
 
 	// btn01
-	this.instance_2 = new lib.btn01();
-	this.instance_2.setTransform(139.3,273.4,0.3275,0.3275);
-	this.instance_2.alpha = 0;
-	this.instance_2._off = true;
-	new cjs.ButtonHelper(this.instance_2, 0, 1, 2, false, new lib.btn01(), 3);
+	this.instance_7 = new lib.btn01();
+	this.instance_7.setTransform(139.3,273.4,0.3275,0.3275);
+	this.instance_7.alpha = 0;
+	this.instance_7._off = true;
+	new cjs.ButtonHelper(this.instance_7, 0, 1, 2, false, new lib.btn01(), 3);
 
 	this.button_5 = new lib.btn01();
 	this.button_5.name = "button_5";
 	this.button_5.setTransform(139.3,273.4,0.3275,0.3275);
+	this.button_5._off = true;
 	new cjs.ButtonHelper(this.button_5, 0, 1, 2, false, new lib.btn01(), 3);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[]}).to({state:[{t:this.instance_2}]},34).to({state:[{t:this.button_5}]},10).to({state:[]},1).wait(60));
-	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(34).to({_off:false},0).to({_off:true,alpha:1},10).wait(61));
+	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(34).to({_off:false},0).to({_off:true,alpha:1},10).wait(173));
+	this.timeline.addTween(cjs.Tween.get(this.button_5).wait(34).to({_off:false},10).to({_off:true},1).wait(60).to({_off:false},0).to({alpha:0},10).to({_off:true},1).wait(46).to({_off:false},0).to({alpha:1},10).to({_off:true},1).wait(11).to({_off:false,alpha:0},0).to({alpha:1},10).to({_off:true},1).wait(11).to({_off:false,alpha:0},0).to({alpha:1},10).wait(1));
 
 	// btn
-	this.instance_3 = new lib.play_btn();
-	this.instance_3.setTransform(158,862.5,0.8752,0.8752,0,0,0,-300.7,122.5);
-	new cjs.ButtonHelper(this.instance_3, 0, 1, 2, false, new lib.play_btn(), 3);
+	this.instance_8 = new lib.play_btn();
+	this.instance_8.setTransform(158,862.5,0.8752,0.8752,0,0,0,-300.7,122.5);
+	new cjs.ButtonHelper(this.instance_8, 0, 1, 2, false, new lib.play_btn(), 3);
 
 	this.button_1 = new lib.play_btn();
 	this.button_1.name = "button_1";
 	this.button_1.setTransform(158.05,479.4,0.8752,0.8752,0,0,0,-300.6,122.7);
+	this.button_1._off = true;
 	new cjs.ButtonHelper(this.button_1, 0, 1, 2, false, new lib.play_btn(), 3);
 
-	this.instance_4 = new lib.web_btn();
-	this.instance_4.setTransform(219.6,320);
-	this.instance_4.alpha = 0;
-	this.instance_4._off = true;
-	new cjs.ButtonHelper(this.instance_4, 0, 1, 2, false, new lib.web_btn(), 3);
-
-	this.instance_5 = new lib.motion_btn();
-	this.instance_5.setTransform(744.35,320);
-	this.instance_5.alpha = 0;
-	this.instance_5._off = true;
-	new cjs.ButtonHelper(this.instance_5, 0, 1, 2, false, new lib.motion_btn(), 3);
-
-	this.instance_6 = new lib.graphic_btn();
-	this.instance_6.setTransform(225.65,320);
-	this.instance_6.alpha = 0;
-	this.instance_6._off = true;
-	new cjs.ButtonHelper(this.instance_6, 0, 1, 2, false, new lib.graphic_btn(), 3);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_3}]}).to({state:[{t:this.instance_3}]},6).to({state:[{t:this.instance_3}]},3).to({state:[{t:this.button_1}]},15).to({state:[]},1).to({state:[{t:this.instance_4}]},29).to({state:[{t:this.instance_4}]},10).to({state:[]},1).to({state:[{t:this.instance_5}]},9).to({state:[{t:this.instance_5}]},10).to({state:[]},1).to({state:[{t:this.instance_6}]},9).to({state:[{t:this.instance_6}]},10).wait(1));
-	this.timeline.addTween(cjs.Tween.get(this.instance_3).to({regY:122.6,x:158.05,y:476},6).to({regX:-300.6,regY:122.7,y:479.4},3).to({_off:true},15).wait(81));
-	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(54).to({_off:false},0).to({alpha:1},10).to({_off:true},1).wait(40));
-	this.timeline.addTween(cjs.Tween.get(this.instance_5).wait(74).to({_off:false},0).to({alpha:1},10).to({_off:true},1).wait(20));
-	this.timeline.addTween(cjs.Tween.get(this.instance_6).wait(94).to({_off:false},0).to({alpha:1},10).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_8).to({regY:122.6,x:158.05,y:476},6).to({regX:-300.6,regY:122.7,y:479.4},3).to({_off:true},15).wait(193));
+	this.timeline.addTween(cjs.Tween.get(this.button_1).wait(9).to({_off:false},15).to({_off:true},1).wait(101).to({_off:false,regX:-300.7,regY:122.5,x:158,y:862.5},0).to({regY:122.6,x:158.05,y:476},6).to({regX:-300.6,regY:122.7,y:479.4},3).wait(15).to({_off:true},1).wait(66));
 
 	// BG03
-	this.instance_7 = new lib.bg_anim();
-	this.instance_7.setTransform(118.15,-351.05,1.6429,1.8553,0,0,0,100,18.6);
-	this.instance_7._off = true;
+	this.instance_9 = new lib.bg_anim();
+	this.instance_9.setTransform(118.15,-351.05,1.6429,1.8553,0,0,0,100,18.6);
+	this.instance_9._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_7).wait(85).to({_off:false},0).to({x:699.35},9).wait(11));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(85).to({_off:false},0).to({x:699.35},9).to({_off:true},11).wait(68).to({_off:false},0).wait(11).to({x:118.15},10).to({_off:true},1).wait(22));
 
 	// BG02
-	this.instance_8 = new lib.bg_anim();
-	this.instance_8.setTransform(118.15,-351.05,1.6429,1.8553,0,0,0,100,18.6);
-	this.instance_8._off = true;
+	this.instance_10 = new lib.bg_anim();
+	this.instance_10.setTransform(118.15,-351.05,1.6429,1.8553,0,0,0,100,18.6);
+	this.instance_10._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_8).wait(65).to({_off:false},0).to({x:-628.95},9).to({_off:true},11).wait(20));
+	this.timeline.addTween(cjs.Tween.get(this.instance_10).wait(65).to({_off:false},0).to({x:-628.95},9).to({_off:true},11).wait(110).to({_off:false},0).wait(11).to({x:118.15},10).wait(1));
 
 	// BG
-	this.instance_9 = new lib.bg_anim();
-	this.instance_9.setTransform(488.8,313.55,0.5584,0.6306,0,0,0,100,18.5);
+	this.instance_11 = new lib.bg_anim();
+	this.instance_11.setTransform(488.8,313.55,0.5584,0.6306,0,0,0,100,18.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).wait(24).to({regY:18.6,scaleX:1.6429,scaleY:1.8553,x:118.15,y:-351.05},10).wait(10).to({y:508.95},10).to({_off:true},11).wait(40));
+	this.timeline.addTween(cjs.Tween.get(this.instance_11).wait(24).to({regY:18.6,scaleX:1.6429,scaleY:1.8553,x:118.15,y:-351.05},10).wait(10).to({y:508.95},10).to({_off:true},11).wait(40).to({_off:false,y:-351.05},0).wait(11).to({regY:18.5,scaleX:0.5584,scaleY:0.6306,x:488.8,y:313.55},10).wait(25).to({regY:18.6,scaleX:1.6429,scaleY:1.8553,x:118.15,y:508.95},0).wait(11).to({y:-351.05},10).to({_off:true},1).wait(44));
 
 	this._renderFirstFrame();
 
